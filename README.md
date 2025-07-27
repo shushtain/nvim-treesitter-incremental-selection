@@ -47,7 +47,7 @@ This plugin doesn't set any keymaps by default.
 
 You may be familiar with `init_selection`, `node_incremental`, `node_decremental` from the `master` branch of [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter). These have slightly different names but act in similar fashion.
 
-> [!ATTENTION] `scope_incremental` is not implemented (for now?).
+> ⚠️ `scope_incremental` is not implemented (for now?).
 
 Use this commands:
 
@@ -80,7 +80,7 @@ vim.keymap.set("v", "<shortcut>", function()
 end)
 ```
 
-> [!ATTENTION] Children use 1-based indexing. To count backwards, use negative numbers. `0` falls back to `1`. If positive or negative index goes past the child count, the last child from that direction is chosen.
+> ⚠️ Children use 1-based indexing. To count backwards, use negative numbers. `0` falls back to `1`. If positive or negative index goes past the child count, the last child from that direction is chosen.
 
 ## Considerations
 
