@@ -6,18 +6,16 @@ local M = {}
 ---@type table<integer, table<TSNode|nil>>
 local selections = {}
 
-local node_opts = {
-  ignore_injections = cfg.config.ignore_injections,
-  include_anonymous = true,
-}
-
 M.init_selection = function()
   if not utils.parse() then
     return nil
   end
 
   local buf = vim.api.nvim_get_current_buf()
-  local node = vim.treesitter.get_node(node_opts)
+  local node = vim.treesitter.get_node({
+    ignore_injections = cfg.config.ignore_injections,
+    include_anonymous = true,
+  })
 
   if not utils.update_selection(node) then
     return nil
