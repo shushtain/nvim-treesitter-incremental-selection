@@ -7,15 +7,20 @@ local M = {}
 local selections = {}
 
 M.init_selection = function()
-  if not utils.parse() then
-    return nil
-  end
-
   local buf = vim.api.nvim_get_current_buf()
-  local node = vim.treesitter.get_node({
+
+  local ok_node, node = pcall(vim.treesitter.get_node, {
     ignore_injections = cfg.config.ignore_injections,
     include_anonymous = true,
   })
+
+  if not ok_node or node == nil then
+    vim.notify(
+      "Could not get node. Check if Treesitter is active",
+      vim.log.levels.WARN
+    )
+    return nil
+  end
 
   if not utils.update_selection(node) then
     return nil
