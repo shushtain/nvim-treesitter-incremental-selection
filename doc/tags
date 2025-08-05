@@ -7,7 +7,9 @@ nvim-treesitter-incremental-selection#next_sibling	nvim-treesitter-incremental-s
 nvim-treesitter-incremental-selection#prev_sibling	nvim-treesitter-incremental-selection.txt	/*nvim-treesitter-incremental-selection#prev_sibling*
 nvim-treesitter-incremental-selection-intro	nvim-treesitter-incremental-selection.txt	/*nvim-treesitter-incremental-selection-intro*
 nvim-treesitter-incremental-selection-opts	nvim-treesitter-incremental-selection.txt	/*nvim-treesitter-incremental-selection-opts*
+nvim-treesitter-incremental-selection-opts#fallback	nvim-treesitter-incremental-selection.txt	/*nvim-treesitter-incremental-selection-opts#fallback*
 nvim-treesitter-incremental-selection-opts#ignore_injections	nvim-treesitter-incremental-selection.txt	/*nvim-treesitter-incremental-selection-opts#ignore_injections*
 nvim-treesitter-incremental-selection-opts#loop_siblings	nvim-treesitter-incremental-selection.txt	/*nvim-treesitter-incremental-selection-opts#loop_siblings*
+nvim-treesitter-incremental-selection-opts#quiet	nvim-treesitter-incremental-selection.txt	/*nvim-treesitter-incremental-selection-opts#quiet*
 nvim-treesitter-incremental-selection-setup	nvim-treesitter-incremental-selection.txt	/*nvim-treesitter-incremental-selection-setup*
 nvim-treesitter-incremental-selection-usage	nvim-treesitter-incremental-selection.txt	/*nvim-treesitter-incremental-selection-usage*

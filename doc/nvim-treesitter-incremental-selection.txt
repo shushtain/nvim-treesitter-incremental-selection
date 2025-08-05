@@ -25,6 +25,8 @@ With Lazy and config defaults:
         tsis.setup({
           ignore_injections = false,
           loop_siblings = false,
+          fallback = false,
+          quiet = false,
         })
       end
     }
@@ -57,6 +59,16 @@ calling `next_sibling` on the last pair would jump-select the first pair.
 Calling `prev_sibling` on the first pair would jump-select the last pair.
 If this setting is `false`, calling those functions would do nothing
 in those cases.
+
+                         *nvim-treesitter-incremental-selection-opts#fallback*
+fallback ~
+
+If `true` and Treesitter is not active, will select inside Word instead (`viW`).
+
+                            *nvim-treesitter-incremental-selection-opts#quiet*
+quiet ~
+
+If `true` and Treesitter is not active, will not show warning.
 
 ==============================================================================
 USAGE                            *nvim-treesitter-incremental-selection-usage*

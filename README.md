@@ -18,6 +18,8 @@ return {
     tsis.setup({
       ignore_injections = false,
       loop_siblings = false,
+      fallback = false,
+      quiet = false,
     })
   end
 }
@@ -38,6 +40,14 @@ If `true`, last child will have first child as next sibling, and vice versa.
 For example:
 
 You select one of key-value pairs within a table. If this setting is `true`, calling `next_sibling` on the last pair would jump-select the first pair. Calling `prev_sibling` on the first pair would jump-select the last pair. If this setting is `false`, calling those functions would do nothing in those cases.
+
+### fallback
+
+If `true` and Treesitter is not active, will select inside Word instead (`viW`).
+
+### quiet
+
+If `true` and Treesitter is not active, will not show warning.
 
 ## Usage
 

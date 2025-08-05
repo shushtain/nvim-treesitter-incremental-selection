@@ -15,10 +15,15 @@ M.init_selection = function()
   })
 
   if not ok_node or node == nil then
-    vim.notify(
-      "Could not get node. Check if Treesitter is active",
-      vim.log.levels.WARN
-    )
+    if cfg.config.fallback then
+      vim.cmd("normal! viW")
+    end
+    if not cfg.config.quiet then
+      vim.notify(
+        "Could not detect nodes. Check if Treesitter is active",
+        vim.log.levels.WARN
+      )
+    end
     return nil
   end
 
