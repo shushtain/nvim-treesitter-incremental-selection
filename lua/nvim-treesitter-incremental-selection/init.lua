@@ -113,14 +113,14 @@ M.prev_sibling = function()
   local parent = node:parent()
 
   local ok_children, children = pcall(parent.named_child_count, parent)
-  if not ok_children or children < 2 then
+  if not ok_children or children <= 1 then
     return nil
   end
 
   local sibling = node:prev_named_sibling()
 
   if sibling == nil and cfg.config.loop_siblings then
-    sibling = parent:named_child(children)
+    sibling = parent:named_child(children - 1)
   end
 
   if sibling == nil or not utils.update_selection(sibling) then
