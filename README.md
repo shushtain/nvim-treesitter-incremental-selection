@@ -59,7 +59,7 @@ You may be familiar with `init_selection`, `node_incremental`, `node_decremental
 
 > !!! `scope_incremental` is not implemented (for now?).
 
-Use this commands:
+Use these commands:
 
 ```lua
 local tsis = require("nvim-treesitter-incremental-selection")
@@ -72,7 +72,7 @@ vim.keymap.set("v", "<shortcut>", tsis.decrement_node)
 
 There were no `next_sibling`, `prev_sibling` or `child` in the original implementation. One of good reasons for that is that they break the original flow (after switching to siblings or children, `decrement_node` chain must be emptied). But still, you may want to use them occasionally.
 
-Use this commands:
+Use these commands:
 
 ```lua
 local tsis = require("nvim-treesitter-incremental-selection")
