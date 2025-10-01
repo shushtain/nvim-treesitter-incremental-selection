@@ -25,7 +25,6 @@ M.update_selection = function(node)
 
   local srow, scol = node:start()
   local erow, ecol = node:end_()
-  print(srow, scol, erow, ecol)
 
   local mode = vim.api.nvim_get_mode()
   if mode.mode ~= "v" then
