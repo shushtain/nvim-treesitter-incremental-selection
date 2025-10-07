@@ -1,5 +1,7 @@
 # Incremental Selection with Treesitter for Neovim
 
+> ❗ Deprecated. New plugin is planned with extended features and no legacy support goals. For the familiar experience, I recommend [treesitter-modules.nvim](https://github.com/MeanderingProgrammer/treesitter-modules.nvim) by MeanderingProgrammer.
+
 People who switch to the `main` branch of [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) might notice that it aims to remove modules, such as `incremental_selection`. This plugin aims to bring it back and more.
 
 ## Setup
